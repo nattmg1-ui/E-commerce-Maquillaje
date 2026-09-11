@@ -15,33 +15,97 @@ export const usuarios = [
 ];
 
 export const marcas = [
-  { id: '1', nombre: 'Bella Rosa', descripcion: 'Marca nacional de maquillaje color', activo: true },
-  { id: '2', nombre: 'GlowUp', descripcion: 'Marca especializada en bases y tratamiento', activo: true },
+  { id: '1', nombre: 'Maybelline New York', descripcion: 'Marca global de maquillaje accesible, fuerte en labiales y color', activo: true },
+  { id: '2', nombre: "L'Oreal Paris", descripcion: 'Marca francesa de maquillaje y cuidado facial', activo: true },
+  { id: '3', nombre: 'MAC Cosmetics', descripcion: 'Marca profesional de alta pigmentacion', activo: true },
+  { id: '4', nombre: 'Fenty Beauty', descripcion: 'Marca inclusiva conocida por bases e iluminadores', activo: true },
 ];
 
 export const categorias = [
   { id: '1', nombre: 'Labiales', descripcion: 'Labiales en distintos acabados', activo: true },
   { id: '2', nombre: 'Bases', descripcion: 'Bases de maquillaje liquidas y en polvo', activo: true },
   { id: '3', nombre: 'Rubor', descripcion: 'Rubores en polvo y crema', activo: true },
+  { id: '4', nombre: 'Delineadores', descripcion: 'Delineadores liquidos y en lapiz', activo: true },
+  { id: '5', nombre: 'Sombras', descripcion: 'Sombras individuales y paletas', activo: true },
+  { id: '6', nombre: 'Iluminador', descripcion: 'Iluminadores en barra y polvo', activo: true },
 ];
 
 export const productos = [
   { id: '1', categoriaId: '1', marcaId: '1', nombre: 'Labial Mate Pasion', descripcion: 'Labial mate de larga duracion', activo: true, fechaRegistro: '2026-07-05' },
   { id: '2', categoriaId: '2', marcaId: '2', nombre: 'Base Liquida Natural', descripcion: 'Base de cobertura media, acabado natural', activo: true, fechaRegistro: '2026-07-10' },
   { id: '3', categoriaId: '3', marcaId: '1', nombre: 'Rubor en Polvo Durazno', descripcion: 'Rubor compacto tono durazno', activo: true, fechaRegistro: '2026-07-15' },
+  { id: '4', categoriaId: '1', marcaId: '3', nombre: 'Labial Liquido Velvet', descripcion: 'Labial liquido de acabado aterciopelado', activo: true, fechaRegistro: '2026-07-18' },
+  { id: '5', categoriaId: '4', marcaId: '3', nombre: 'Delineador de Ojos Preciso', descripcion: 'Delineador en lapiz de trazo fino', activo: true, fechaRegistro: '2026-07-20' },
+  { id: '6', categoriaId: '2', marcaId: '4', nombre: 'Base en Polvo Compacta', descripcion: 'Base compacta de cobertura alta', activo: true, fechaRegistro: '2026-07-22' },
+  { id: '7', categoriaId: '5', marcaId: '2', nombre: 'Paleta de Sombras Nude', descripcion: 'Paleta de 12 tonos tierra', activo: true, fechaRegistro: '2026-07-25' },
+  { id: '8', categoriaId: '6', marcaId: '4', nombre: 'Iluminador en Barra', descripcion: 'Iluminador cremoso de facil aplicacion', activo: true, fechaRegistro: '2026-07-28' },
+  { id: '9', categoriaId: '1', marcaId: '1', nombre: 'Labial Mate Coral', descripcion: 'Labial mate tono coral vibrante', activo: true, fechaRegistro: '2026-08-01' },
+  { id: '10', categoriaId: '3', marcaId: '2', nombre: 'Rubor en Crema Rosa', descripcion: 'Rubor en crema de acabado luminoso', activo: true, fechaRegistro: '2026-08-03' },
+  { id: '11', categoriaId: '4', marcaId: '1', nombre: 'Delineador Liquido Waterproof', descripcion: 'Delineador liquido resistente al agua', activo: true, fechaRegistro: '2026-08-05' },
+  { id: '12', categoriaId: '5', marcaId: '3', nombre: 'Sombra Individual Bronce', descripcion: 'Sombra individual efecto metalico', activo: true, fechaRegistro: '2026-08-07' },
 ];
 
 export const variantesProducto = [
+  // Producto 1 - Labial Mate Pasion
   { id: '1', productoId: '1', tono: 'Rojo Pasion', codigoHex: '#C0392B', presentacion: '3.5g', precio: 189.0, sku: 'LAB-ROJ-001', activo: true },
   { id: '2', productoId: '1', tono: 'Rojo Vino', codigoHex: '#7B241C', presentacion: '3.5g', precio: 189.0, sku: 'LAB-VIN-001', activo: true },
+  { id: '5', productoId: '1', tono: 'Rosa Nude', codigoHex: '#D8A7A0', presentacion: '3.5g', precio: 179.0, sku: 'LAB-NUD-001', activo: true },
+
+  // Producto 2 - Base Liquida Natural
   { id: '3', productoId: '2', tono: 'Beige Claro', codigoHex: '#E8C39E', presentacion: '30ml', precio: 259.0, sku: 'BAS-BEI-001', activo: true },
+  { id: '6', productoId: '2', tono: 'Beige Medio', codigoHex: '#D9A876', presentacion: '30ml', precio: 259.0, sku: 'BAS-BME-001', activo: true },
+  { id: '7', productoId: '2', tono: 'Beige Oscuro', codigoHex: '#B47C4D', presentacion: '30ml', precio: 259.0, sku: 'BAS-BOS-001', activo: true },
+
+  // Producto 3 - Rubor en Polvo Durazno
   { id: '4', productoId: '3', tono: 'Durazno', codigoHex: '#F5B183', presentacion: '8g', precio: 149.0, sku: 'RUB-DUR-001', activo: true },
+  { id: '8', productoId: '3', tono: 'Coral', codigoHex: '#F2785C', presentacion: '8g', precio: 149.0, sku: 'RUB-COR-001', activo: true },
+
+  // Producto 4 - Labial Liquido Velvet
+  { id: '9', productoId: '4', tono: 'Terracota', codigoHex: '#A64B2A', presentacion: '5ml', precio: 219.0, sku: 'LLV-TER-001', activo: true },
+  { id: '10', productoId: '4', tono: 'Ciruela', codigoHex: '#6E2C4B', presentacion: '5ml', precio: 219.0, sku: 'LLV-CIR-001', activo: true },
+
+  // Producto 5 - Delineador de Ojos Preciso
+  { id: '11', productoId: '5', tono: 'Negro Intenso', codigoHex: '#000000', presentacion: '1.2g', precio: 129.0, sku: 'DEL-NEG-001', activo: true },
+  { id: '12', productoId: '5', tono: 'Cafe Chocolate', codigoHex: '#3B2312', presentacion: '1.2g', precio: 129.0, sku: 'DEL-CAF-001', activo: true },
+
+  // Producto 6 - Base en Polvo Compacta
+  { id: '13', productoId: '6', tono: 'Marfil', codigoHex: '#F0DCC0', presentacion: '12g', precio: 229.0, sku: 'BPC-MAR-001', activo: true },
+  { id: '14', productoId: '6', tono: 'Beige Natural', codigoHex: '#E0BB90', presentacion: '12g', precio: 229.0, sku: 'BPC-BEN-001', activo: true },
+
+  // Producto 7 - Paleta de Sombras Nude
+  { id: '15', productoId: '7', tono: 'Tonos Tierra', codigoHex: null, presentacion: '12x1.5g', precio: 349.0, sku: 'SOM-NUD-001', activo: true },
+
+  // Producto 8 - Iluminador en Barra
+  { id: '16', productoId: '8', tono: 'Champan Dorado', codigoHex: '#E9C46A', presentacion: '9g', precio: 199.0, sku: 'ILU-CHA-001', activo: true },
+  { id: '17', productoId: '8', tono: 'Rosa Perlado', codigoHex: '#E8B4BC', presentacion: '9g', precio: 199.0, sku: 'ILU-ROS-001', activo: true },
+
+  // Producto 9 - Labial Mate Coral
+  { id: '18', productoId: '9', tono: 'Coral Vibrante', codigoHex: '#FF6F61', presentacion: '3.5g', precio: 189.0, sku: 'LAB-COV-001', activo: true },
+
+  // Producto 10 - Rubor en Crema Rosa
+  { id: '19', productoId: '10', tono: 'Rosa Palo', codigoHex: '#E29BA0', presentacion: '6g', precio: 159.0, sku: 'RUC-ROP-001', activo: true },
+  { id: '20', productoId: '10', tono: 'Rosa Frambuesa', codigoHex: '#C2185B', presentacion: '6g', precio: 159.0, sku: 'RUC-ROF-001', activo: true },
+
+  // Producto 11 - Delineador Liquido Waterproof
+  { id: '21', productoId: '11', tono: 'Negro Waterproof', codigoHex: '#000000', presentacion: '3ml', precio: 139.0, sku: 'DLW-NEG-001', activo: true },
+
+  // Producto 12 - Sombra Individual Bronce
+  { id: '22', productoId: '12', tono: 'Bronce Metalico', codigoHex: '#8C5A2B', presentacion: '2g', precio: 89.0, sku: 'SOI-BRO-001', activo: true },
 ];
 
 export const imagenesProducto = [
   { id: '1', productoId: '1', urlImagen: 'https://cdn.example.com/labial-pasion.jpg', principal: true },
   { id: '2', productoId: '2', urlImagen: 'https://cdn.example.com/base-natural.jpg', principal: true },
   { id: '3', productoId: '3', urlImagen: 'https://cdn.example.com/rubor-durazno.jpg', principal: true },
+  { id: '4', productoId: '4', urlImagen: 'https://cdn.example.com/labial-velvet.jpg', principal: true },
+  { id: '5', productoId: '5', urlImagen: 'https://cdn.example.com/delineador-preciso.jpg', principal: true },
+  { id: '6', productoId: '6', urlImagen: 'https://cdn.example.com/base-compacta.jpg', principal: true },
+  { id: '7', productoId: '7', urlImagen: 'https://cdn.example.com/paleta-nude.jpg', principal: true },
+  { id: '8', productoId: '8', urlImagen: 'https://cdn.example.com/iluminador-barra.jpg', principal: true },
+  { id: '9', productoId: '9', urlImagen: 'https://cdn.example.com/labial-coral.jpg', principal: true },
+  { id: '10', productoId: '10', urlImagen: 'https://cdn.example.com/rubor-crema-rosa.jpg', principal: true },
+  { id: '11', productoId: '11', urlImagen: 'https://cdn.example.com/delineador-waterproof.jpg', principal: true },
+  { id: '12', productoId: '12', urlImagen: 'https://cdn.example.com/sombra-bronce.jpg', principal: true },
 ];
 
 export const inventarios = [
@@ -49,6 +113,24 @@ export const inventarios = [
   { id: '2', varianteId: '2', cantidad: 25, fechaActualizacion: '2026-09-01' },
   { id: '3', varianteId: '3', cantidad: 15, fechaActualizacion: '2026-09-01' },
   { id: '4', varianteId: '4', cantidad: 60, fechaActualizacion: '2026-09-01' },
+  { id: '5', varianteId: '5', cantidad: 30, fechaActualizacion: '2026-09-01' },
+  { id: '6', varianteId: '6', cantidad: 20, fechaActualizacion: '2026-09-01' },
+  { id: '7', varianteId: '7', cantidad: 18, fechaActualizacion: '2026-09-01' },
+  { id: '8', varianteId: '8', cantidad: 22, fechaActualizacion: '2026-09-01' },
+  { id: '9', varianteId: '9', cantidad: 35, fechaActualizacion: '2026-09-01' },
+  { id: '10', varianteId: '10', cantidad: 28, fechaActualizacion: '2026-09-01' },
+  { id: '11', varianteId: '11', cantidad: 50, fechaActualizacion: '2026-09-01' },
+  { id: '12', varianteId: '12', cantidad: 45, fechaActualizacion: '2026-09-01' },
+  { id: '13', varianteId: '13', cantidad: 33, fechaActualizacion: '2026-09-01' },
+  { id: '14', varianteId: '14', cantidad: 27, fechaActualizacion: '2026-09-01' },
+  { id: '15', varianteId: '15', cantidad: 12, fechaActualizacion: '2026-09-01' },
+  { id: '16', varianteId: '16', cantidad: 24, fechaActualizacion: '2026-09-01' },
+  { id: '17', varianteId: '17', cantidad: 19, fechaActualizacion: '2026-09-01' },
+  { id: '18', varianteId: '18', cantidad: 38, fechaActualizacion: '2026-09-01' },
+  { id: '19', varianteId: '19', cantidad: 26, fechaActualizacion: '2026-09-01' },
+  { id: '20', varianteId: '20', cantidad: 21, fechaActualizacion: '2026-09-01' },
+  { id: '21', varianteId: '21', cantidad: 42, fechaActualizacion: '2026-09-01' },
+  { id: '22', varianteId: '22', cantidad: 55, fechaActualizacion: '2026-09-01' },
 ];
 
 export const direcciones = [
