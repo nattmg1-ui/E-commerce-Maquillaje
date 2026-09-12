@@ -1,0 +1,61 @@
+.context {
+  background: var(--fondo);
+  padding: 48px 0;
+}
+
+.context__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.context__card {
+  background: var(--superficie);
+  border: 1px solid var(--linea);
+  border-radius: var(--radius-card);
+  padding: 24px 22px;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.context__card:hover {
+  border-color: var(--beige);
+  box-shadow: 0 8px 24px -16px rgba(43, 35, 32, 0.25);
+}
+
+.context__icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--oro-rosa-selected-bg);
+  color: var(--ciruela);
+  margin-bottom: 14px;
+}
+
+.context__titulo {
+  margin: 0 0 6px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--tinta);
+}
+
+.context__texto {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--pizarra);
+}
+
+@media (max-width: 860px) {
+  .context__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .context__inner {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,57 @@
+.app__body {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 32px;
+  padding-top: 28px;
+}
+
+.app__content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* Placeholders visuales para las partes que arma el resto del equipo.
+   Quítenlos según vayan integrando sus componentes reales. */
+.stub {
+  display: grid;
+  place-items: center;
+  border: 1px dashed var(--line);
+  border-radius: 4px;
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+  background: repeating-linear-gradient(
+    135deg,
+    var(--bg),
+    var(--bg) 10px,
+    var(--surface) 10px,
+    var(--surface) 20px
+  );
+}
+
+.stub--hero {
+  height: 320px;
+  margin: 0 28px;
+}
+
+.stub--sidebar {
+  height: 400px;
+}
+
+.stub--main {
+  min-height: 400px;
+}
+
+.stub--footer {
+  height: 160px;
+  margin-top: 40px;
+}
+
+@media (max-width: 860px) {
+  .app__body {
+    grid-template-columns: 1fr;
+  }
+  .stub--sidebar {
+    height: 120px;
+  }
+}
